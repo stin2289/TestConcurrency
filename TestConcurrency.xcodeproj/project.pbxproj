@@ -15,6 +15,7 @@
 		D978007C2053240A00007A71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D978007B2053240A00007A71 /* main.m */; };
 		D97800862053240A00007A71 /* TestConcurrencyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D97800852053240A00007A71 /* TestConcurrencyTests.m */; };
 		D97800912053240A00007A71 /* TestConcurrencyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D97800902053240A00007A71 /* TestConcurrencyUITests.m */; };
+		D97800A02053298300007A71 /* TestLocks.m in Sources */ = {isa = PBXBuildFile; fileRef = D978009F2053298300007A71 /* TestLocks.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		D978008C2053240A00007A71 /* TestConcurrencyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestConcurrencyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D97800902053240A00007A71 /* TestConcurrencyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestConcurrencyUITests.m; sourceTree = "<group>"; };
 		D97800922053240A00007A71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D978009E2053298300007A71 /* TestLocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLocks.h; sourceTree = "<group>"; };
+		D978009F2053298300007A71 /* TestLocks.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestLocks.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				D978006D2053240A00007A71 /* AppDelegate.m */,
 				D978006F2053240A00007A71 /* ViewController.h */,
 				D97800702053240A00007A71 /* ViewController.m */,
+				D978009E2053298300007A71 /* TestLocks.h */,
+				D978009F2053298300007A71 /* TestLocks.m */,
 				D97800722053240A00007A71 /* Main.storyboard */,
 				D97800752053240A00007A71 /* Assets.xcassets */,
 				D97800772053240A00007A71 /* LaunchScreen.storyboard */,
@@ -267,6 +272,7 @@
 			files = (
 				D97800712053240A00007A71 /* ViewController.m in Sources */,
 				D978007C2053240A00007A71 /* main.m in Sources */,
+				D97800A02053298300007A71 /* TestLocks.m in Sources */,
 				D978006E2053240A00007A71 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

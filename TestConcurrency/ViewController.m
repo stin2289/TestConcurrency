@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TestLocks.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    TestLocks *testLocks = [[TestLocks alloc] init];
+    NSLog(@"%@",testLocks);
 }
 
 
@@ -24,6 +28,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 @end
