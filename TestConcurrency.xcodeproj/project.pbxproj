@@ -16,6 +16,10 @@
 		D97800862053240A00007A71 /* TestConcurrencyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D97800852053240A00007A71 /* TestConcurrencyTests.m */; };
 		D97800912053240A00007A71 /* TestConcurrencyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D97800902053240A00007A71 /* TestConcurrencyUITests.m */; };
 		D97800A02053298300007A71 /* TestLocks.m in Sources */ = {isa = PBXBuildFile; fileRef = D978009F2053298300007A71 /* TestLocks.m */; };
+		E05767FC217F81C0007E5E26 /* TestDispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = E05767FB217F81C0007E5E26 /* TestDispatch.m */; };
+		E05767FD217F81C0007E5E26 /* TestDispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = E05767FB217F81C0007E5E26 /* TestDispatch.m */; };
+		E0576800217F8362007E5E26 /* CancellableDispatchQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E05767FF217F8362007E5E26 /* CancellableDispatchQueue.m */; };
+		E0576801217F8362007E5E26 /* CancellableDispatchQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E05767FF217F8362007E5E26 /* CancellableDispatchQueue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,12 @@
 		D97800922053240A00007A71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D978009E2053298300007A71 /* TestLocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLocks.h; sourceTree = "<group>"; };
 		D978009F2053298300007A71 /* TestLocks.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestLocks.m; sourceTree = "<group>"; };
+		E039364620B382E0009977EC /* TestStaticLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestStaticLibrary.h; sourceTree = "<group>"; };
+		E039364720B382E0009977EC /* TestStaticLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestStaticLibrary.m; sourceTree = "<group>"; };
+		E05767FA217F81C0007E5E26 /* TestDispatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDispatch.h; sourceTree = "<group>"; };
+		E05767FB217F81C0007E5E26 /* TestDispatch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDispatch.m; sourceTree = "<group>"; };
+		E05767FE217F8362007E5E26 /* CancellableDispatchQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CancellableDispatchQueue.h; sourceTree = "<group>"; };
+		E05767FF217F8362007E5E26 /* CancellableDispatchQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CancellableDispatchQueue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +97,7 @@
 				D978006B2053240A00007A71 /* TestConcurrency */,
 				D97800842053240A00007A71 /* TestConcurrencyTests */,
 				D978008F2053240A00007A71 /* TestConcurrencyUITests */,
+				E039364520B382E0009977EC /* TestStaticLibrary */,
 				D978006A2053240A00007A71 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -110,6 +121,10 @@
 				D97800702053240A00007A71 /* ViewController.m */,
 				D978009E2053298300007A71 /* TestLocks.h */,
 				D978009F2053298300007A71 /* TestLocks.m */,
+				E05767FA217F81C0007E5E26 /* TestDispatch.h */,
+				E05767FB217F81C0007E5E26 /* TestDispatch.m */,
+				E05767FE217F8362007E5E26 /* CancellableDispatchQueue.h */,
+				E05767FF217F8362007E5E26 /* CancellableDispatchQueue.m */,
 				D97800722053240A00007A71 /* Main.storyboard */,
 				D97800752053240A00007A71 /* Assets.xcassets */,
 				D97800772053240A00007A71 /* LaunchScreen.storyboard */,
@@ -135,6 +150,15 @@
 				D97800922053240A00007A71 /* Info.plist */,
 			);
 			path = TestConcurrencyUITests;
+			sourceTree = "<group>";
+		};
+		E039364520B382E0009977EC /* TestStaticLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				E039364620B382E0009977EC /* TestStaticLibrary.h */,
+				E039364720B382E0009977EC /* TestStaticLibrary.m */,
+			);
+			path = TestStaticLibrary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,7 +294,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0576800217F8362007E5E26 /* CancellableDispatchQueue.m in Sources */,
 				D97800712053240A00007A71 /* ViewController.m in Sources */,
+				E05767FC217F81C0007E5E26 /* TestDispatch.m in Sources */,
 				D978007C2053240A00007A71 /* main.m in Sources */,
 				D97800A02053298300007A71 /* TestLocks.m in Sources */,
 				D978006E2053240A00007A71 /* AppDelegate.m in Sources */,
@@ -281,7 +307,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0576801217F8362007E5E26 /* CancellableDispatchQueue.m in Sources */,
 				D97800862053240A00007A71 /* TestConcurrencyTests.m in Sources */,
+				E05767FD217F81C0007E5E26 /* TestDispatch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
